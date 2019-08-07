@@ -67,7 +67,7 @@ export default class MyCamera extends React.Component {
                                     </div></div>
                                 </div>
                                 <div className="modal-body">
-                                    {!this.webCamEnabled ? <button type='button' className='btn btn-info mb-4' onClick={this.enableWebcam}>Open Cam</button> : <Camera
+                                    {this.webCamEnabled ? <button type='button' className='btn btn-info mb-4' onClick={this.enableWebcam}>Open Cam</button> : <Camera
                                         style={{ position: 'relative' }}
                                         ref={(cam) => {
                                             this.camera = cam;
