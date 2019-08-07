@@ -49,21 +49,18 @@ export default class Players extends React.Component {
         return (
             <React.Fragment>
                 <div className='card text-center'>
-                    <div className='card-header'>
-                        <h2>ROCK PAPER SCISSOR SHOOT!</h2>
-                    </div>
-                    <div className='card-body'>
+                   <div className='container'>
+                    {/* <div className='card-body'> */}
                         <PlayerCards color='red' symbol={playerRed} className='icon'></PlayerCards>
                         <PlayerCards color='blue' symbol={playerBlue} className='icon'></PlayerCards>
                     </div>
                     <div className='container'>
                         <button type='button' className='btn btn-info mb-4' onClick={this.handleRunButton}>Start</button>
+                       
                     </div>
                 </div>
                 <div className='card-footer text-muted mt-3'>
                     <p className='text-center'>{this.state.winner}</p>
-                </div>
-                <div className='container'>
                 </div>
             </React.Fragment>
         );
